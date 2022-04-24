@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #000000 28%, #20c652 80%, #1f9c68 100%);
+    background-repeat: no-repeat;
+
+}
+
+.titulo{
+    color: map-get($map:$paleta, $key:'uno');
+    font-size: $tittle2;
+    font-family: $primaryFont;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.subTitulo{
+    @extend .titulo;
+    font-size: $tittle4;
+}
+
+.primero{
+    div img{
+        height: 500px;
+
+    }
+    p{
+        color: map-get($map:$paleta, $key:'uno');
+        font-family: $secondaryFont;
+        font-size: $tittle5;
+        margin: 25px;
+        
+    }
+}

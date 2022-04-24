@@ -1,0 +1,58 @@
+.encabezado{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #e94848 100%);
+    background-repeat: no-repeat;
+    height: $n-75;
+    display: flex;
+    justify-content: space-around;
+    ul li{
+        display: inline-flex;
+        margin: 5px;
+        text-decoration: none;
+        a{
+            text-decoration: none;
+            font-family: $secondaryFont;
+            font-size: $primarySize;
+            color: $menuCyF;
+        }
+    }
+}
+.encabezado{
+    h5{
+        color: map-get($map:$paleta, $key:'uno');
+        font-size: $tittle3;
+        font-family: $primaryFont;
+    }
+}
+
+.encabezado div a{
+    text-decoration: none;
+}
+
+.h1{
+    color: map-get($map:$paleta, $key:'uno');
+    font-size: $tittle1;
+    font-family: $primaryFont;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.cierre-end {
+    top: 0;
+    right: 0;
+    width: 250px;
+    border-left: 1px solid rgba(0,0,0,.2);
+    transform: translateX(100%);
+    background-color: rgb(45, 44, 44);
+}
+
+.navList {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-wrap: nowrap;
+}

@@ -1,0 +1,52 @@
+.group {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    border: solid 5px map-get($map:$paleta, $key:'dos');
+    border-radius: 8px;
+
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        border: solid 3px map-get($map:$paleta, $key:'tres');
+    }
+}
+.group p{
+    font-size: $tittle5;
+    color: #ecb602;
+    font-family: $secondaryFont;
+}
+
+h3 {
+    font-size: $tittle4;
+    font-family:$primaryFont;
+    color: map-get($map:$paleta, $key:'uno');
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.3fr;
+    gap: 1px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo"
+        "group";
+        
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mem1 mem2 mem3 mem4";
+    grid-area: group;
+}

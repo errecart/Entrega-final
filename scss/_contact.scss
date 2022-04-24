@@ -1,0 +1,56 @@
+#pagC{
+    height: auto;
+}
+
+@mixin texto($display,$justify-content,$align-items,$flex-direction){
+    display: $display;
+    justify-content: $justify-content ;
+    align-items: $align-items ;
+    flex-direction: $flex-direction;
+}
+
+
+.formC{
+    @include texto(flex, center, center, column);
+    line-height: 0.5px;
+    padding-bottom: 2rem;
+}
+
+.form2 {
+    @include texto(flex, center, center, column);
+    padding-bottom: 1rem;
+    input{
+        font-family: $primaryFont;
+        width: 400px;
+        border-radius: 6px;
+        font-size: 15px;
+        background-color: #060606;
+        color: map-get($map:$paleta, $key:'uno');
+        height: 30px; 
+    }
+}
+
+
+label {
+    font-family: $primaryFont;
+    color: map-get($map:$paleta, $key:'dos');
+    font-size: $tittle6;
+}
+
+.form2 textarea {
+    resize: none;
+    font-family: $primaryFont;
+    width: 400px;
+    border-radius: 6px;
+    background-color: #060606;
+    color: map-get($map:$paleta, $key:'uno');
+    height: 325px;
+    padding: 10px;
+}
+
+.formC button{
+    width: $img-400;
+    background-color: rgb(136, 27, 209);
+    font-family: $primaryFont;
+}
+

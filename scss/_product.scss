@@ -1,0 +1,107 @@
+
+.conciertos{
+    @extend .selection;
+    padding: 15px;
+    color: map-get($map:$paleta, $key:'dos');
+    font-family: $primaryFont;
+    align-items: center;
+    line-height: 4rem;
+
+    a{
+        text-decoration: none;
+        background-color: #123ecf;
+        color: #060606;
+        font-family: $primaryFont;
+        font-size: $tittle6;
+        border-radius: 6px;
+        box-shadow: 12px 12px 14px 2px rgba(0, 0, 0, 0.61);
+        -webkit-box-shadow: 12px 12px 14px 2px rgba(0, 0, 0, 0.61);
+        -moz-box-shadow: 12px 12px 14px 2px rgba(0, 0, 0, 0.61);
+        margin: 15px;
+        padding: 4px;
+
+    }
+    p{
+        font-size: $tittle5;
+    }
+}
+
+.play {
+    @extend .selection;
+    padding: 2rem 2rem;
+
+    p {
+    color: map-get($map:$paleta, $key:'cuatro');
+    font-size: 25px;
+    font-family: $secondaryFont;
+    line-height: 45px;
+}
+}
+
+
+.play iframe {
+    border: solid 4px map-get($map:$paleta, $key:'cuatro');
+}
+
+
+.formP {
+    @extend .selection;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.form1{
+    @extend .selection;
+    padding: 0.5rem;;
+    font-family: $primaryFont;
+}
+
+.form1 input{
+    width: 450px;
+    height: 30px;
+    color: map-get($map:$paleta, $key:'uno');
+    background-color: black;
+}
+
+.selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+input {
+    font-family: $primaryFont;
+    color: map-get($map:$paleta, $key:'uno');
+    border-radius: 6px;
+    background-color: #060606;
+    font-size: 15px;
+    height: 20px;
+}
+
+.label {
+    @extend .selection;
+    font-family: $primaryFont;
+    color:map-get($map:$paleta, $key:'dos');
+
+}
+
+.selectCP {
+    width: 450px;
+    margin: 10px;
+    font-family: $primaryFont;
+    border-radius: 6px;
+    background-color: #060606;
+    color:map-get($map:$paleta, $key:'uno');
+    height: 30px;
+}
+
+.btn{
+    margin-top: 2rem;
+    width: 200px;
+    background-color: rgb(136, 27, 209);
+    font-family: $primaryFont;
+}
+
+

@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Permanent+Marker&display=swap");
+.encabezado {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #e94848 100%);
+  background-repeat: no-repeat;
+  height: 75px;
+  display: flex;
+  justify-content: space-around; }
+  .encabezado ul li {
+    display: inline-flex;
+    margin: 5px;
+    text-decoration: none; }
+    .encabezado ul li a {
+      text-decoration: none;
+      font-family: "Teko", sans-serif;
+      font-size: 30px;
+      color: #363797; }
+
+.encabezado h5 {
+  color: white;
+  font-size: 40px;
+  font-family: "Bebas Neue", cursive; }
+
+.encabezado div a {
+  text-decoration: none; }
+
+.h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+  justify-content: center; }
+
+.cierre-end {
+  top: 0;
+  right: 0;
+  width: 250px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  background-color: #2d2c2c; }
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-wrap: nowrap; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #000000;
+  background-image: linear-gradient(180deg, #000000 28%, #20c652 80%, #1f9c68 100%);
+  background-repeat: no-repeat; }
+
+.titulo, .subTitulo {
+  color: white;
+  font-size: 45px;
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+  justify-content: center;
+  padding: 15px; }
+
+.subTitulo {
+  font-size: 35px; }
+
+.primero div img {
+  height: 500px; }
+
+.primero p {
+  color: white;
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  margin: 25px; }
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "titulo" "imagenes"; }
+
+.imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 8px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "imgG imgG imgG" "imgG imgG imgG" "imgG imgG imgG";
+  grid-area: imagenes;
+  justify-items: center; }
+
+.imgG {
+  width: 400px;
+  height: 400px;
+  border-radius: 5%;
+  object-fit: fill; }
+
+.imgG:hover {
+  opacity: 60%;
+  transform: scale(1.2, 1.2);
+  transition: 1.5s; }
+
+.group {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  border: solid 5px orangered;
+  border-radius: 8px; }
+  .group img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: solid 3px #48064d; }
+
+.group p {
+  font-size: 30px;
+  color: #ecb602;
+  font-family: "Teko", sans-serif; }
+
+h3 {
+  font-size: 35px;
+  font-family: "Bebas Neue", cursive;
+  color: white; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.3fr;
+  gap: 1px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "titulo" "group"; }
+
+.titulo, .subTitulo {
+  grid-area: titulo; }
+
+.group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "mem1 mem2 mem3 mem4";
+  grid-area: group; }
+
+.conciertos {
+  padding: 15px;
+  color: orangered;
+  font-family: "Bebas Neue", cursive;
+  align-items: center;
+  line-height: 4rem; }
+  .conciertos a {
+    text-decoration: none;
+    background-color: #123ecf;
+    color: #060606;
+    font-family: "Bebas Neue", cursive;
+    font-size: 20px;
+    border-radius: 6px;
+    box-shadow: 12px 12px 14px 2px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 12px 12px 14px 2px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 12px 12px 14px 2px rgba(0, 0, 0, 0.61);
+    margin: 15px;
+    padding: 4px; }
+  .conciertos p {
+    font-size: 30px; }
+
+.play {
+  padding: 2rem 2rem; }
+  .play p {
+    color: #01eb28;
+    font-size: 25px;
+    font-family: "Teko", sans-serif;
+    line-height: 45px; }
+
+.play iframe {
+  border: solid 4px #01eb28; }
+
+.formP {
+  justify-content: space-around;
+  padding: 1rem; }
+
+.form1 {
+  padding: 0.5rem;
+  font-family: "Bebas Neue", cursive; }
+
+.form1 input {
+  width: 450px;
+  height: 30px;
+  color: white;
+  background-color: black; }
+
+.selection, .conciertos, .play, .formP, .form1, .label {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+input {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  border-radius: 6px;
+  background-color: #060606;
+  font-size: 15px;
+  height: 20px; }
+
+.label {
+  font-family: "Bebas Neue", cursive;
+  color: orangered; }
+
+.selectCP {
+  width: 450px;
+  margin: 10px;
+  font-family: "Bebas Neue", cursive;
+  border-radius: 6px;
+  background-color: #060606;
+  color: white;
+  height: 30px; }
+
+.btn {
+  margin-top: 2rem;
+  width: 200px;
+  background-color: #881bd1;
+  font-family: "Bebas Neue", cursive; }
+
+#pagC {
+  height: auto; }
+
+.formC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0.5px;
+  padding-bottom: 2rem; }
+
+.form2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1rem; }
+  .form2 input {
+    font-family: "Bebas Neue", cursive;
+    width: 400px;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #060606;
+    color: white;
+    height: 30px; }
+
+label {
+  font-family: "Bebas Neue", cursive;
+  color: orangered;
+  font-size: 20px; }
+
+.form2 textarea {
+  resize: none;
+  font-family: "Bebas Neue", cursive;
+  width: 400px;
+  border-radius: 6px;
+  background-color: #060606;
+  color: white;
+  height: 325px;
+  padding: 10px; }
+
+.formC button {
+  width: 400px;
+  background-color: #881bd1;
+  font-family: "Bebas Neue", cursive; }
+
+footer {
+  height: 70px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #e94848 100%);
+  padding: 0.8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  color: #363797; }
+
+.reds a {
+  text-decoration: none; }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "titulo" "imagenes"; }
+  .imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "imgG imgG" "imgG imgG" "imgG imgG" "imgG imgG" "imgG imgG";
+    grid-area: imagenes;
+    justify-items: center; }
+  .imgG {
+    width: 45vw;
+    height: 50vh; }
+  .footC {
+    display: flex;
+    position: absolute;
+    bottom: 0; } }
+
+@media only screen and (min-width: 500px) and (max-width: 992px) {
+  .imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5rem; }
+  .imgG {
+    width: 90vw;
+    height: 50vh; }
+  .members {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas: "titulo" "group"; }
+  .titulo, .subTitulo {
+    grid-area: titulo; }
+  .group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "mem1" "mem2" "mem3" "mem4";
+    grid-area: group; }
+  .titulo, .subTitulo {
+    grid-area: titulo; }
+  .group p {
+    font-size: 25px;
+    margin: 8px; }
+  .conciertos p {
+    font-size: 18px; }
+  .play p {
+    color: #48064d; }
+  iframe {
+    width: 75vw; }
+  .footC {
+    display: flex;
+    position: absolute;
+    bottom: 0; }
+  footer {
+    width: 100vw; }
+  #pagC {
+    height: 100vh; }
+  a svg {
+    width: 40px;
+    height: 40px; } }
+
+@media only screen and (min-width: 310px) and (max-width: 500px) {
+  .h1 {
+    font-size: 30px; }
+  .imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5rem; }
+  .imgG {
+    height: 50vh;
+    width: 80vw; }
+  .members {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas: "titulo" "group"; }
+  .titulo, .subTitulo {
+    grid-area: titulo; }
+  .group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "mem1" "mem2" "mem3" "mem4";
+    grid-area: group; }
+  .group p {
+    font-size: 15px;
+    margin: 6px; }
+  .conciertos p {
+    font-size: 10px; }
+  .conciertos a {
+    font-size: 11px; }
+  .form1 input {
+    width: 200px; }
+  .selectCP {
+    width: 200px; }
+  iframe {
+    width: 70vw; }
+  .form2 input {
+    width: 240px; }
+  .form2 textarea {
+    width: 240px; }
+  .formC button {
+    width: 240px; }
+  a svg {
+    width: 18px;
+    height: 18px; }
+  footer {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem; }
+    footer a svg {
+      width: 30px;
+      height: 30px; }
+  #pagC {
+    height: auto; }
+  footer p {
+    font-size: 12px;
+    padding: 5px; } }
+
+#errorP {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #errorP p {
+    font-family: "Permanent Marker", cursive;
+    font-size: 30px;
+    color: #ffffff; }
+
+#errorP h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 50px; }
+
+#errorP img {
+  width: 350px;
+  height: auto; }
+
+.volver button {
+  font-family: "Permanent Marker", cursive;
+  margin-top: 2rem;
+  background-color: #2601fa; }
+
+@media only screen and (min-width: 450px) and (max-width: 1050px) {
+  #errorP h1 {
+    font-size: 75px; }
+  #errorP p {
+    display: inline-block;
+    font-size: 45px; }
+  .volver button {
+    width: 30vw;
+    height: 65px; } }
+
+@media only screen and (min-width: 300px) and (max-width: 450px) {
+  #errorP h1 {
+    font-size: 50px; }
+  #errorP img {
+    width: 250px;
+    height: auto; }
+  #errorP p {
+    display: inline-block;
+    font-size: 15px; }
+  .volver button {
+    width: 40vw;
+    height: 58px; } }

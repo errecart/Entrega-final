@@ -1,0 +1,137 @@
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 4fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "titulo"
+            "imagenes";
+    }
+
+    .imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 8px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "imgG imgG"
+            "imgG imgG"
+            "imgG imgG"
+            "imgG imgG"
+            "imgG imgG";
+        grid-area: imagenes;
+        justify-items: center;
+    }
+
+    .imgG {
+        width: 45vw;
+        height: 50vh;
+    }
+
+
+    .footC{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+
+@media only screen and (min-width:500px) and (max-width: 992px) {
+
+
+    // galery
+    .imagenes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0.5rem;
+
+    }
+
+    .imgG {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    // galery
+
+    // members
+    .members {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "titulo"
+            "group";
+    }
+
+    .titulo {
+        grid-area: titulo;
+    }
+
+    .group {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "mem1"
+            "mem2"
+            "mem3"
+            "mem4";
+        grid-area: group;
+
+    }
+
+
+    .titulo {
+        grid-area: titulo;
+    }
+
+
+    .group p {
+        font-size: 25px;
+        margin: 8px;
+    }
+
+    .conciertos p {
+        font-size: 18px;
+    }
+
+    .play p {
+        color: map-get($map:$paleta, $key:'tres');
+    }
+
+    iframe {
+        width: 75vw;
+    }
+    .footC{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    footer{
+        width: 100vw;
+    }
+
+    #pagC{
+        height: 100vh;
+    }
+    
+    a svg {
+        width: 40px;
+        height: 40px;
+    }
+    // footerC
+
+
+
+
+
+
+}
+

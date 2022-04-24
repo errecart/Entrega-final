@@ -1,0 +1,120 @@
+@media only screen and (min-width:310px) and (max-width: 500px){
+
+    .h1{
+        font-size: $tittle5;
+    }
+
+    
+    .imagenes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0.5rem;
+    }
+
+    .imgG {
+        height: 50vh;
+        width: 80vw;
+    }
+
+    .members {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "titulo"
+            "group";
+    }
+
+    .titulo {
+        grid-area: titulo;
+    }
+
+    .group {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "mem1"
+            "mem2"
+            "mem3"
+            "mem4";
+        grid-area: group;
+    }
+
+    .group p {
+        font-size: 15px;
+        margin: 6px;
+    }
+
+
+    // Product
+
+    .conciertos{
+        p {
+            font-size: 10px;
+        }
+        a{
+            font-size: 11px;
+        }
+    }
+
+    .form1 input{
+        width: 200px;
+    }
+
+    .selectCP{
+        width: 200px;
+    }
+
+    iframe {
+        width: 70vw;
+    }
+
+    // Contact
+
+    .form2 input{
+        width: 240px;
+    }
+
+    .form2 textarea{
+        width: 240px;
+    }
+
+    .formC button{
+        width: 240px;
+    }
+
+    a svg {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    footer {
+        height: 65px;
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+
+        a svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    #pagC{
+        height: auto;
+    }
+
+    footer p {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+
+
+
+
+
+}

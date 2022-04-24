@@ -1,0 +1,39 @@
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo"
+        "imagenes";
+}
+
+.imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 8px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "imgG imgG imgG"
+        "imgG imgG imgG"
+        "imgG imgG imgG";
+    grid-area: imagenes;
+    justify-items: center;
+}
+
+.imgG{
+    width: $img-400;
+    height: $img-400;
+    border-radius: 5%;
+    object-fit: fill;
+}
+
+.imgG:hover{
+    opacity: 60%;
+    transform: scale(1.2,1.2);
+    transition: 1.5s;
+
+}
